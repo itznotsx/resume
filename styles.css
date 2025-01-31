@@ -108,6 +108,10 @@ h1, .subtitle{
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .resume-container {
+        padding: 15px;
+    }
+
     .content {
         flex-direction: column;
     }
@@ -116,11 +120,15 @@ h1, .subtitle{
         width: 100%;
         border-right: none;
         border-bottom: 2px solid #e6e6e6;
-        padding: 15px;
+        padding: 20px;
     }
 
     main {
         width: 100%;
+        padding: 20px;
+    }
+
+    .header {
         padding: 15px;
     }
 
@@ -134,12 +142,24 @@ h1, .subtitle{
 }
 
 @media (max-width: 480px) {
+    .resume-container {
+        padding: 20px;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
     .header h1 {
         font-size: 1.8rem;
     }
 
     .header .subtitle {
         font-size: 0.9rem;
+    }
+
+    .sidebar {
+        padding: 25px;
     }
 
     .sidebar h2, main h2 {
@@ -150,11 +170,15 @@ h1, .subtitle{
         font-size: 0.9rem;
     }
 
-    .main .job h3 {
+    main {
+        padding: 25px;
+    }
+
+    main .job h3 {
         font-size: 1rem;
     }
 
-    .main .job span {
+    main .job span {
         font-size: 0.8rem;
     }
 }
